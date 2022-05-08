@@ -20,8 +20,8 @@
     </div>
     
     <div class="form-group">
-        <label>Brand</label>
-        <input type="text" name="car_brand" value="<?php echo $car->car_brand; ?>" class="form-control" placeholder="enter car brand" required>
+        <label>Marque</label>
+        <input type="text" name="car_brand" value="<?php echo $car->car_brand; ?>" class="form-control" placeholder="Entrer la marque de la voiture" required>
     </div>
     
     <div class="form-group">

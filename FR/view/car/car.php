@@ -10,7 +10,7 @@
         <tr>
         <th style="width:120px; background-color: #5DACCD; color:#fff">ID</th>
             <th style="width:180px; background-color: #5DACCD; color:#fff">Designation</th>
-            <th style=" background-color: #5DACCD; color:#fff">Brand</th>
+            <th style=" background-color: #5DACCD; color:#fff">Marque</th>
             <th style=" background-color: #5DACCD; color:#fff">Model</th>
             <th style="width:120px; background-color: #5DACCD; color:#fff">Overview</th>            
             <th style="width:120px; background-color: #5DACCD; color:#fff">Price</th>            
@@ -34,10 +34,10 @@
             <td><?php echo $r->car_fuelType; ?></td>
             <td><?php echo $r->car_seatingCapacity; ?></td>
             <td>
-                <a  class="btn btn-warning" href="?c=car&a=Crud&car_id=<?php echo $r->car_id; ?>">Edit</a>
+                <a  class="btn btn-warning" href="?c=car&a=Crud&car_id=<?php echo $r->car_id; ?>">Modifier</a>
             </td>
             <td>
-                <a  class="btn btn-danger" onclick="javascript:return confirm('Are you sure to delete this car?');" href="?c=car&a=Remove&car_id=<?php echo $r->car_id; ?>">Remove</a>
+                <a  class="btn btn-danger" onclick="javascript:return confirm('Voulez-vous vraiment supprimer cette voiture?');" href="?c=car&a=Remove&car_id=<?php echo $r->car_id; ?>">Supprimer</a>
             </td>
         </tr>
     <?php endforeach; ?>
